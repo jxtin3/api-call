@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Courses Output</title>
+    <title>Courses</title>
 </head>
 <body>
     <h1>Created Courses</h1>

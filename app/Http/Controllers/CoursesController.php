@@ -15,7 +15,7 @@ class CoursesController extends Controller
         return response()->json(Course::all(), 200);
     }
 
-    // Create a new course
+    // Create 
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -29,7 +29,7 @@ class CoursesController extends Controller
         return response()->json($course, 201);
     }
 
-    // Return a single course by ID
+    // Retrn
     public function show($id)
     {
         $course = Course::find($id);
@@ -41,7 +41,7 @@ class CoursesController extends Controller
         return response()->json($course, 200);
     }
 
-    // Fully update an existing course
+    // Fully updatezzz
     public function update(Request $request, $id)
     {
         $course = Course::find($id);
@@ -61,7 +61,7 @@ class CoursesController extends Controller
         return response()->json($course, 200);
     }
 
-    // Partially update an existing course
+    // Partial updatzz
     public function patch(Request $request, $id)
     {
         $course = Course::find($id);
@@ -70,8 +70,7 @@ class CoursesController extends Controller
             return response()->json(['message' => 'Course not found'], 404);
         }
 
-        // 'sometimes' rule allows the field to be missing from the request entirely, 
-        // but if it is present, it must pass the validation rules
+       
         $validatedData = $request->validate([
             'title' => 'sometimes|required|string|max:255',
             'description' => 'sometimes|nullable|string',
@@ -83,7 +82,7 @@ class CoursesController extends Controller
         return response()->json($course, 200);
     }
 
-    // Delete a single course
+    // Delete single 
     public function destroy($id)
     {
         $course = Course::find($id);
@@ -97,7 +96,7 @@ class CoursesController extends Controller
         return response()->json(['message' => 'Course deleted successfully'], 200);
     }
 
-    // Truncate the table / delete all courses
+    // delete all 
     public function destroyAll()
     {
         Course::truncate();
