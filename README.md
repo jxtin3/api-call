@@ -1,4 +1,4 @@
-# Laravel Courses API CALL DEMONSTRATION
+# Laravel Courses API Call Demonstration
 
 A simple RESTful API built with Laravel for managing courses.  
 This project demonstrates CRUD operations using Laravel Controllers, Models, Migrations, and API Routes.
